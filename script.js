@@ -6,7 +6,8 @@ class Circle {
         this.backgroundColor = backgroundColor;
     }
     generateName() {
-        const index = Object.values(shapesMap).filter((shape) => shape instanceof Circle).length + 1;
+        const index = Object.values(shapesMap).filter((shape) => shape instanceof Circle)
+            .length + 1;
         return `circle_${index}`;
     }
     get size() {
@@ -26,7 +27,8 @@ class Square {
         this.backgroundColor = backgroundColor;
     }
     generateName() {
-        const index = Object.values(shapesMap).filter((shape) => shape instanceof Square).length + 1;
+        const index = Object.values(shapesMap).filter((shape) => shape instanceof Square)
+            .length + 1;
         return `square_${index}`;
     }
     get size() {
